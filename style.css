@@ -18,6 +18,7 @@ body {
     font-family: 'Outfit', sans-serif;
     display: grid;
     place-items: center;
+    height: 100vh;
     background: var(--light-clr);
 }
 
