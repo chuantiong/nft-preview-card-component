@@ -25,10 +25,12 @@ body {
 /* General */
 
 .card__title {
+    display: inline-block;
     width: fit-content;
     color: #fff;
     font-size: 1.375rem;
     font-weight: var(--fw-semibold);
+    margin-bottom: .75rem;
 }
 
 .card__title:active,
@@ -43,6 +45,7 @@ body {
     font-style: var(--fw-light);
     font-weight: 300;
     line-height: 1.625rem;
+    margin: 0;
 }
 
 .creator__creator-text {
@@ -66,7 +69,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1.5em;
+    margin-bottom: 1.5rem;
 }
 
 .card__image-overlay-wrapper {
@@ -101,7 +104,7 @@ a {
 .price-info__eth-icon {
     width: 11px;
     height: fit-content;
-    margin-right: .41em;
+    margin-right: .41rem;
 }
 
 .price-info__price {
@@ -113,7 +116,7 @@ a {
 .price-info__clock-icon {
     width: 16px;
     height: fit-content;
-    margin-right: .48em;
+    margin-right: .48rem;
 }
 
 .price-info__day-counts {
@@ -141,7 +144,7 @@ a {
 /* Layouts */
 
 .main {
-    padding: 3.88em 1.5em;
+    padding: 3.88rem 1.5rem;
 }
 
 .container {
@@ -154,7 +157,7 @@ a {
     max-width: 350px;
     background-color: #15263F;
     margin: 0 auto;
-    padding: 1.5em;
+    padding: 1.5rem;
     border-radius: 15px;
 }
 
@@ -162,14 +165,14 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 1em;
+    padding-block: 1rem;
     border-bottom: 1px solid #2E405A;
 }
 
 .card_creator-wrapper {
     display: flex;
     align-items: center;
-    padding-top: 1em;
+    padding-top: 1rem;
 }
 
 /* Footer */
@@ -202,7 +205,15 @@ a {
 /* Media Queries */
 
 @media (min-width: 550px) {
+    .card__title {
+        margin-bottom: 1rem;
+    }
+
     .card__description {
         width: 100%;
+    }
+
+    .card__price-info-wrapper {
+        padding-block: 1.5rem;
     }
 }
