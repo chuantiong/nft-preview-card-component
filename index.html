@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Frontend Mentor | NFT preview card component</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- CSS Stylesheet -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main class="main container">
+			<div class="card">
+				<div class="card__image-wrapper">
+					<div class="card__image-overlay-wrapper hide">
+						<img
+							class="card__image-view-icon"
+							src="./images/icon-view.svg"
+							alt=""
+						/>
+						<div class="card__image-overlay"></div>
+					</div>
+					<img
+						class="card__image"
+						src="./images/image-equilibrium.jpg"
+						alt=""
+						tabindex="0"
+					/>
+				</div>
+				<a class="card__title" href="#">Equilibrium #3429</a>
+				<p class="card__description">
+					Our Equilibrium collection promotes balance and calm.
+				</p>
+
+				<div class="card__price-info-wrapper">
+					<div class="row">
+						<img
+							class="price-info__eth-icon"
+							src="./images/icon-ethereum.svg"
+							alt=""
+						/>
+						<span class="price-info__price">0.041 ETH</span>
+					</div>
+					<div class="row">
+						<img
+							class="price-info__clock-icon"
+							src="./images/icon-clock.svg"
+							alt=""
+						/>
+						<span class="price-info__day-counts">3 days left</span>
+					</div>
+				</div>
+
+				<div class="card_creator-wrapper">
+					<img class="creator__avatar" src="./images/image-avatar.png" alt="" />
+					<a class="creator__creator-text" href="#">
+						<span class="soft-blue">Creation of </span>
+						Jules Wyvern
+					</a>
+				</div>
+			</div>
+		</main>
+
+		<!-- Attribution -->
+		<footer class="footer">
+			<p class="attribution">
+				Challenge by
+				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+					>Frontend Mentor</a
+				>. Coded by <a href="https://github.com/chuantiong">Alvin Tiong</a>.
+			</p>
+		</footer>
+		<script src="index.js"></script>
+	</body>
+</html>
