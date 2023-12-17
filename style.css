@@ -19,7 +19,7 @@ body {
     display: grid;
     place-items: center;
     height: 100vh;
-    background: var(--light-clr);
+    background: #0D192C;
 }
 
 /* General */
@@ -141,8 +141,6 @@ a {
 /* Layouts */
 
 .main {
-    background-color: #0D192C;
-    height: 100vh;
     padding: 3.88em 1.5em;
 }
 
